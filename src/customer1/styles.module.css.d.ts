@@ -1,0 +1,1 @@
+export const customer1: string;
