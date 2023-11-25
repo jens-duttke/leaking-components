@@ -1,3 +1,4 @@
+import * as React from 'react';
 import Customer1ClientComponent from './client-component'
 
 import * as styles from './styles.module.css';
@@ -8,12 +9,10 @@ export default function RootLayout ({
   children: React.ReactNode
 }) {
   return (
-    <html>
-      <body>
-        <h1 className={styles.customer1}>Customer1 layout</h1>
+    <React.Fragment>
+        <h1 className={styles.customer1}>Customer1</h1>
         <Customer1ClientComponent />
         {children}
-      </body>
-    </html>
+    </React.Fragment>
   )
 }
